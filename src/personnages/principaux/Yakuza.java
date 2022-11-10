@@ -11,5 +11,16 @@ public class Yakuza extends Humain{
 		this.clan=clan;
 	}
 
+	public void extorquer( Commercant c) {
+		int x = c.seFaireExtorquer();
+		gagneArgent(x);
+		this.reputation=+1;
+	}
 	
+	public void gagner() {
+		 this.reputation+=1;
+		 parler("gg ez");
+	}
+	
+	public int perdre()
 }
